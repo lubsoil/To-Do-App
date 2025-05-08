@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #27548A;
+    color: white;
+    border: none;
+    margin-left: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #183B4E;
+    cursor: pointer;
+}
+
+.button-active {
+    background-color: #DDA853;
+}
+
+.button-active:hover {
+    background-color: #DDA853;
+    cursor: default;
+}
+
+.button-save {
+    background-color: rgb(100, 207, 100);
+}
+
+.button-save:hover {
+    background-color: rgb(81, 167, 81);
+}
+
+.button-cancel {
+    background-color: rgb(209, 56, 56);
+}
+
+.button-cancel:hover {
+    background-color: rgb(155, 41, 41);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main>div {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    margin: 10px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form {
+    text-align: left;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: gainsboro;
+    margin-bottom: 6px;
+}
+
+.form>label {
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.link-active {
+    color: red;
+}
+
+ul {
+    width: 100%;
+    padding-left: 0px;
+}
+
+li {
+    text-align: left;
+    list-style-type: none;
+}
+
+.filters{
+    margin-bottom: 15px;
+}
+
+.todo-element {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.done {
+    text-decoration: line-through;
+}
