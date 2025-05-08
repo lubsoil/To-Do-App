@@ -76,7 +76,7 @@ onMounted(() => {
     <div>
       <h4>Your tasks:</h4>
       <div class="filters">
-        Filtering:
+        Filters:
         <a @click="selectedFilter = 'all'" :class="selectedFilter === 'all' ? 'button button-active' : 'button'">All</a>
         <a @click="selectedFilter = 'active'"
           :class="selectedFilter === 'active' ? 'button button-active' : 'button'">Active</a>
@@ -87,7 +87,7 @@ onMounted(() => {
         <li v-for="todo in filteredTodos" :key="todo.id" class="">
           <div v-if="!todo.editing" class="todo-element">
             <div>
-              <input type="checkbox" @update="saveTodos()" v-model="todo.done">
+              <input type="checkbox" :checked="todo.done" @click="todo.done = !todo.done; saveTodos();" >
               <span :class="{ done: todo.done }">{{ todo.text + (todo.deadline != "" && todo.deadline != null ? " (Deadline: "+todo.deadline+")" : "") }}</span>
             </div>
             <div>
