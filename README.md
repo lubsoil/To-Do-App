@@ -4,7 +4,7 @@ W celu uruchomienia aplikacji należy wpierw wpierw pobrać odpowiedni komponene
 ```sh
 npm install
 ```
-a następnie uruchomić ją w środowisku developerskim bądź produkcyjnym
+a następnie uruchomić ją w środowisku developerskim
 ```sh
 npm run dev
 ```
