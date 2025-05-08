@@ -105,9 +105,9 @@ onMounted(() => {
       </ul>
     </div>
     <div>
-      <a v-if="!addTodoFormVisible" @click="addTodoFormVisible = !addTodoFormVisible" class="button button-save">Add
+      <a v-show="!addTodoFormVisible" @click="addTodoFormVisible = !addTodoFormVisible" class="button button-save">Add
         Task</a>
-      <div v-else>
+      <div v-show="addTodoFormVisible">
         <form @submit.prevent="addTodo();" class="form">
           <label for="add-text">Task Name</label> <input v-model="newTodoText" name="add-text" type="text" required
             placeholder="Task Name">
